@@ -1,28 +1,6 @@
-export default class ColorConsole {
-    static install;
-    static ERROR = 'error';
-    static INFO = 'info';
-    static LIGHT = 'light';
-    static LOG = 'log';
-    static PASSIVE = 'passive';
-    static ROUTER = 'router';
-    static SUCCESS = 'success';
-    static TRACE = 'trace';
-    static WARN = 'warn';
-    static VIDEO = 'video';
-    static COLORS = {
-        error: 'background: #f8d7da; color: #721c24;',
-        info: 'background: #d1ecf1; color: #0c5460;',
-        light: 'background: #fefefe; color: #818182;',
-        log: 'background: #f0f0f0; color: #333333;',
-        passive: 'background: #fafafa; color: #cacaca;',
-        page: 'background: #F7EE95; color: #7E5904;',
-        success: 'background: #d4edda; color: #155724;',
-        trace: 'background: #f0f0f0; color: #7E5904;',
-        warn: 'background: #fff3cd; color: #856404;',
-        router: 'background: #945485; color: #DEB1D6;',
-    };
-    static disabled = false;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class ColorConsole {
     static get time() {
         return (Date.now() / 1000 + '').substr(-8);
     }
@@ -143,6 +121,30 @@ export default class ColorConsole {
         ];
     }
 }
+exports.default = ColorConsole;
+ColorConsole.ERROR = 'error';
+ColorConsole.INFO = 'info';
+ColorConsole.LIGHT = 'light';
+ColorConsole.LOG = 'log';
+ColorConsole.PASSIVE = 'passive';
+ColorConsole.ROUTER = 'router';
+ColorConsole.SUCCESS = 'success';
+ColorConsole.TRACE = 'trace';
+ColorConsole.WARN = 'warn';
+ColorConsole.VIDEO = 'video';
+ColorConsole.COLORS = {
+    error: 'background: #f8d7da; color: #721c24;',
+    info: 'background: #d1ecf1; color: #0c5460;',
+    light: 'background: #fefefe; color: #818182;',
+    log: 'background: #f0f0f0; color: #333333;',
+    passive: 'background: #fafafa; color: #cacaca;',
+    page: 'background: #F7EE95; color: #7E5904;',
+    success: 'background: #d4edda; color: #155724;',
+    trace: 'background: #f0f0f0; color: #7E5904;',
+    warn: 'background: #fff3cd; color: #856404;',
+    router: 'background: #945485; color: #DEB1D6;',
+};
+ColorConsole.disabled = false;
 ColorConsole.install = function (Vue, options) {
     Vue.Console = function () {
         return ColorConsole;

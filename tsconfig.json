@@ -6,29 +6,38 @@
     "compilerOptions": {
         "allowSyntheticDefaultImports": true,
         "baseUrl": ".",
+        "declaration": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "declaration": true,
         "isolatedModules": false,
-        "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
-        "module": "esnext",
+        "lib": [
+            "esnext",
+            "dom",
+            "dom.iterable",
+            "scripthost"
+        ],
+        "module": "commonjs",
         "moduleResolution": "node",
         "noImplicitAny": false,
         "noImplicitThis": false,
         "outDir": "dist",
         "paths": {
-            "*": ["types/*"],
-            "@/*": ["src/*"]
+            "@/*": [
+                "src/*"
+            ],
+            "*": [
+                "types/*"
+            ]
         },
         "preserveConstEnums": true,
         "pretty": true,
-        "strictNullChecks": true,
-        "suppressImplicitAnyIndexErrors": true,
         "removeComments": true,
         "skipLibCheck": true,
-        "strict": true,
         "sourceMap": true,
-        "target": "esnext"
+        "strict": true,
+        "strictNullChecks": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "target": "es6"
     },
     "exclude": [
         "dist",

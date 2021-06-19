@@ -16,11 +16,19 @@
         "ts-mocha": "^8.0.0",
         "typescript": "^4.1.3"
     },
+    "exclude": [
+        "dist",
+        "node_modules",
+        "test"
+    ],
     "files": [
         "dist",
         "README.md"
     ],
     "homepage": "https://www.polymermallard.com",
+    "include": [
+        "./src/**/*"
+    ],
     "keywords": [
         "javascript",
         "console"
