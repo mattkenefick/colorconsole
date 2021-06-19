@@ -26,7 +26,7 @@
         "console"
     ],
     "license": "MIT",
-    "main": "./dist/index.js",
+    "main": "./dist/ColorConsole.js",
     "name": "colorconsole",
     "repository": {
         "type": "git",
@@ -39,6 +39,6 @@
         "prettier": "prettier -c src/**/*.ts",
         "version": "npm run format && git add -A src"
     },
-    "types": "dist/index.d.ts",
-    "version": "1.0.0"
+    "types": "dist/ColorConsole.d.ts",
+    "version": "1.0.1"
 }
