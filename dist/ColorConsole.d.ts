@@ -1,0 +1,32 @@
+export default class ColorConsole {
+    static install: any;
+    static readonly ERROR: string;
+    static readonly INFO: string;
+    static readonly LIGHT: string;
+    static readonly LOG: string;
+    static readonly PASSIVE: string;
+    static readonly ROUTER: string;
+    static readonly SUCCESS: string;
+    static readonly TRACE: string;
+    static readonly WARN: string;
+    static readonly VIDEO: string;
+    static readonly COLORS: any;
+    static disabled: boolean;
+    static get time(): string;
+    static any(type: string, ...params: any[]): void;
+    static error(...params: any[]): void;
+    static light(...params: any[]): void;
+    static log(...params: any[]): void;
+    static info(...params: any[]): void;
+    static passive(...params: any[]): void;
+    static router(...params: any[]): void;
+    static success(...params: any[]): void;
+    static trace(...params: any[]): void;
+    static warn(...params: any[]): void;
+    static video(...params: any[]): void;
+    static sendToConsole(type: string, msg: string, params: any[]): void;
+    protected static formatLog(params: any[], prefix?: string, suffix?: string): any;
+    protected static formatObjects(params: any[]): object[];
+    protected static formatStyle(type?: string): string;
+    protected static separateLogInformation(...params: any[]): any;
+}

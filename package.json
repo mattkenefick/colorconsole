@@ -1,0 +1,44 @@
+{
+    "author": "Matt Kenefick <matt@polymermallard.com>",
+    "bugs": {
+        "url": "https://github.com/mattkenefick/colorconsole/issues"
+    },
+    "description": "Modified console for web applications",
+    "devDependencies": {
+        "@types/chai": "^4.2.14",
+        "@types/mocha": "^8.2.0",
+        "@typescript-eslint/eslint-plugin": "^4.13.0",
+        "@typescript-eslint/parser": "^4.13.0",
+        "chai": "^4.2.0",
+        "eslint": "^7.17.0",
+        "mocha": "^8.2.1",
+        "nyc": "^15.1.0",
+        "ts-mocha": "^8.0.0",
+        "typescript": "^4.1.3"
+    },
+    "files": [
+        "dist",
+        "README.md"
+    ],
+    "homepage": "https://www.polymermallard.com",
+    "keywords": [
+        "javascript",
+        "console"
+    ],
+    "license": "MIT",
+    "main": "./dist/index.js",
+    "name": "colorconsole",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mattkenefick/colorconsole.git"
+    },
+    "scripts": {
+        "build": "tsc",
+        "coverage": "nyc npm test",
+        "lint": "eslint \"**\\*.ts\"",
+        "prettier": "prettier -c src/**/*.ts",
+        "version": "npm run format && git add -A src"
+    },
+    "types": "dist/index.d.ts",
+    "version": "1.0.0"
+}

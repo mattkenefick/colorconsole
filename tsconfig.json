@@ -1,0 +1,45 @@
+{
+    "atom": {
+        "rewriteTsconfig": false
+    },
+    "compileOnSave": true,
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "declaration": true,
+        "isolatedModules": false,
+        "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+        "module": "esnext",
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "noImplicitThis": false,
+        "outDir": "dist",
+        "paths": {
+            "*": ["types/*"],
+            "@/*": ["src/*"]
+        },
+        "preserveConstEnums": true,
+        "pretty": true,
+        "strictNullChecks": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "removeComments": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "sourceMap": true,
+        "target": "esnext"
+    },
+    "exclude": [
+        "dist",
+        "test",
+        "node_modules",
+        "**/*.spec.ts"
+    ],
+    "include": [
+        "src/**/*"
+    ],
+    "scripts": {
+        "prepublish": "tsc"
+    }
+}
